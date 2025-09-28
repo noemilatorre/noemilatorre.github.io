@@ -355,31 +355,7 @@ body {
     color: #2c5282;
 }
 
-/* Contact Section */
-.contact {
-    padding: 80px 0;
-    background: #ffffff;
-}
-
-.contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #2d3748;
-}
-
-.contact-info {
-    text-align: center;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    color: #4a5568;
-    margin-bottom: 2rem;
-}
-
+/* Stili per la sezione contatti con icone */
 .contact-links {
     display: flex;
     flex-direction: column;
@@ -390,15 +366,54 @@ body {
 .contact-link {
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.8rem;
     color: #2b6cb0;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
+    padding: 0.8rem 1.5rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    min-width: 200px;
+    justify-content: flex-start;
 }
 
 .contact-link:hover {
-    color: #2c5282;
+    background: #2b6cb0;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(43, 108, 176, 0.3);
+}
+
+.contact-link i {
+    font-size: 1.2rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* Colori specifici per ogni piattaforma */
+.contact-link:nth-child(1):hover { /* Email */
+    background: #ea4335;
+    border-color: #ea4335;
+}
+
+.contact-link:nth-child(2):hover { /* LinkedIn */
+    background: #0077b5;
+    border-color: #0077b5;
+}
+
+.contact-link:nth-child(3):hover { /* GitHub */
+    background: #333;
+    border-color: #333;
+}
+
+/* Versione mobile */
+@media (max-width: 768px) {
+    .contact-link {
+        min-width: 250px;
+        justify-content: center;
+    }
 }
 
 /* Footer */
