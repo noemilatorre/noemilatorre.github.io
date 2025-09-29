@@ -435,27 +435,63 @@ body {
     }
 }
 
-/* Colori specifici per ogni piattaforma */
-.contact-link:nth-child(1):hover { /* Email */
-    background: #ea4335;
-    border-color: #ea4335;
+/* Contatti in orizzontale */
+.contact-links-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.contact-link:nth-child(2):hover { /* LinkedIn */
-    background: #0077b5;
-    border-color: #0077b5;
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
 }
 
-.contact-link:nth-child(3):hover { /* GitHub */
-    background: #333;
-    border-color: #333;
+.contact-link:hover {
+    color: #1e4e8c;
+    transform: translateY(-2px);
+}
+
+.contact-link i {
+    font-size: 1.2rem;
+}
+
+.separator {
+    color: #cbd5e0;
+    font-weight: 300;
 }
 
 /* Versione mobile */
 @media (max-width: 768px) {
+    .contact-links-horizontal {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .separator {
+        display: none;
+    }
+    
     .contact-link {
-        min-width: 250px;
+        padding: 0.8rem 1.5rem;
+        background: #f8fafc;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
+        min-width: 200px;
         justify-content: center;
+    }
+    
+    .contact-link:hover {
+        background: #2b6cb0;
+        color: white;
     }
 }
 
