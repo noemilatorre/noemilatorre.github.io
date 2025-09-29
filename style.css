@@ -447,6 +447,32 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    color: #4a5568;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+}
+
+.contact-link:hover {
+    color: #2b6cb0;
+}
+
+.separator {
+    color: #e2e8f0;
+    font-weight: 300;
+}
+/* .contact-links-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #2b6cb0;
     text-decoration: none;
     font-weight: 500;
@@ -467,7 +493,9 @@ body {
 .separator {
     color: #e2e8f0;
     font-weight: 300;
-}
+} */
+
+
 
 /* Versione mobile */
 @media (max-width: 768px) {
@@ -493,6 +521,16 @@ body {
         background: #2b6cb0;
         color: white;
     }
+}
+
+/* Aggiungi spazio sopra il footer */
+.contact {
+    padding: 80px 0 150px; /* 150px di spazio sotto i contatti */
+    background: #ffffff;
+}
+
+.footer {
+    margin-top: 0; /* Assicurati che non ci sia margine extra */
 }
 
 /* Footer */
