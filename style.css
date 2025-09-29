@@ -441,7 +441,6 @@ body {
     font-size: 1.2rem;
 }
 
-
 .separator {
     color: #cbd5e0;
     font-weight: 300;
@@ -467,11 +466,7 @@ body {
         min-width: 200px;
         justify-content: center;
     }
-    
-    .contact-link:hover {
-        background: #2b6cb0;
-        color: white;
-    }
+
 }
 
 
