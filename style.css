@@ -440,8 +440,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    gap: 0;
 }
 
 .contact-link {
@@ -452,20 +451,21 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
-    padding: 0.5rem 1rem;
+    padding: 0.8rem 1.5rem;
+    background: #f8fafc;
+    margin: 0 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
 }
 
 .contact-link:hover {
-    color: #1e4e8c;
+    background: #2b6cb0;
+    color: white;
     transform: translateY(-2px);
 }
 
-.contact-link i {
-    font-size: 1.2rem;
-}
-
 .separator {
-    color: #cbd5e0;
+    color: #e2e8f0;
     font-weight: 300;
 }
 
