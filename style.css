@@ -399,28 +399,7 @@ body {
     }
 }
 
-/* Contact Section */
-.contact {
-    padding: 100px 0 120px;
-    background: #ffffff;
-}
 
-.contact h2 {
-    text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-    color: #2d3748;
-}
-
-.contact-content {
-    text-align: center;
-}
-
-.contact-info p {
-    font-size: 1.1rem;
-    color: #4a5568;
-    margin-bottom: 2rem;
-}
 
 /* Contatti in orizzontale */
 .contact-links-horizontal {
@@ -435,6 +414,7 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
+    color: #2b6cb0; /* resta sempre blu per il testo */
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -444,50 +424,29 @@ body {
     border: 1px solid #e2e8f0;
 }
 
-/* Email - Colore rosso/arancione */
-.contact-link.email {
-    color: #d69e2e; /* Oro */
-    border-color: #d69e2e;
-}
-
-.contact-link.email:hover {
-    background: #d69e2e;
-    color: white;
-    transform: translateY(-2px);
-}
-
-/* LinkedIn - Colore blu (come prima) */
-.contact-link.linkedin {
-    color: #2b6cb0; /* Blu */
-    border-color: #2b6cb0;
+/* Hover personalizzati */
+.contact-link.github:hover {
+    background: #000000; /* nero */
 }
 
 .contact-link.linkedin:hover {
-    background: #2b6cb0;
-    color: white;
-    transform: translateY(-2px);
+    background: #2b6cb0; /* blu LinkedIn */
 }
 
-/* GitHub - Colore nero */
-.contact-link.github {
-    color: #2d3748; /* Nero/grigio scuro */
-    border-color: #2d3748;
-}
-
-.contact-link.github:hover {
-    background: #2d3748;
-    color: white;
-    transform: translateY(-2px);
+.contact-link.mail:hover {
+    background: #f56565; /* rosso/arancione per email */
 }
 
 .contact-link i {
     font-size: 1.2rem;
 }
 
+
 .separator {
     color: #cbd5e0;
     font-weight: 300;
 }
+
 
 /* Versione mobile */
 @media (max-width: 768px) {
@@ -501,8 +460,17 @@ body {
     }
     
     .contact-link {
+        padding: 0.8rem 1.5rem;
+        background: #f8fafc;
+        border-radius: 8px;
+        border: 1px solid #e2e8f0;
         min-width: 200px;
         justify-content: center;
+    }
+    
+    .contact-link:hover {
+        background: #2b6cb0;
+        color: white;
     }
 }
 
