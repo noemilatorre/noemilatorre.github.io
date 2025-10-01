@@ -492,15 +492,38 @@ body {
     border: 2px solid transparent;
 }
 
-.contact-link:hover {
-    background: var(--primary-green);
+/* Contatto con colori diversi */
+.contact-link.email:hover {
+    background: var(--accent-green); /* Verde per email */
     color: white;
+    border-color: var(--accent-green);
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(26, 77, 46, 0.2);
+    box-shadow: 0 8px 20px rgba(64, 145, 108, 0.3);
+}
+
+.contact-link.linkedin:hover {
+    background: #0077b5; /* Blu LinkedIn */
+    color: white;
+    border-color: #0077b5;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 119, 181, 0.3);
+}
+
+.contact-link.github:hover {
+    background: #000000; /* Nero GitHub */
+    color: white;
+    border-color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contact-link i {
     font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-link:hover i {
+    transform: scale(1.1);
 }
 
 .separator {
