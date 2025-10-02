@@ -518,6 +518,31 @@ body {
 }
 
 /* Contatto con colori diversi */
+
+.contact-link.cv {
+    background: var(--light-green);
+    color: var(--primary-green);
+    border: 2px solid transparent;
+}
+
+.contact-link.cv i {
+    color: #d32f2f;
+    transition: all 0.3s ease;
+}
+
+.contact-link.cv:hover {
+    background: #d32f2f;
+    color: white;
+    border-color: #d32f2f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+}
+
+.contact-link.cv:hover i {
+    color: white;
+    transform: scale(1.1);
+}
+
 .contact-link.email:hover {
     background: var(--accent-green); /* Verde per email */
     color: white;
@@ -540,26 +565,6 @@ body {
     border-color: #000000;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Stile per il link CV nella sezione contatti */
-.contact-link.cv:hover {
-    background: #d32f2f; /* Rosso per PDF */
-    color: white;
-    border-color: #d32f2f;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
-}
-
-/* Stile per l'icona del PDF */
-.contact-link.cv i {
-    color: #d32f2f;
-    transition: all 0.3s ease;
-}
-
-.contact-link.cv:hover i {
-    color: white;
-    transform: scale(1.1);
 }
 
 .contact-link i {
