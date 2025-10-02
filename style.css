@@ -464,7 +464,6 @@ body {
     color: var(--accent-green);
     gap: 0.8rem;
 }
-
 /* Contact Section */
 .contact {
     padding: 100px 0 150px;
@@ -517,19 +516,30 @@ body {
     border: 2px solid transparent;
 }
 
-/* Contatto con colori diversi */
-
-.contact-link.cv {
-    background: var(--light-green);
-    color: var(--primary-green);
-    border: 2px solid transparent;
+/* RIMUOVI la proprietà color dalla regola generale delle icone */
+.contact-link i {
+    font-size: 1.2rem;
+    transition: all 0.3s ease; /* Cambiato da transform a all */
 }
 
+/* Stili specifici per ogni tipo di contatto */
 .contact-link.cv i {
     color: var(--primary-green); 
-    transition: all 0.3s ease;
 }
 
+.contact-link.email i {
+    color: var(--primary-green);
+}
+
+.contact-link.linkedin i {
+    color: var(--primary-green);
+}
+
+.contact-link.github i {
+    color: var(--primary-green);
+}
+
+/* Hover effects */
 .contact-link.cv:hover {
     background: #d32f2f;
     color: white;
@@ -544,32 +554,42 @@ body {
 }
 
 .contact-link.email:hover {
-    background: var(--accent-green); /* Verde per email */
+    background: var(--accent-green);
     color: white;
     border-color: var(--accent-green);
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(64, 145, 108, 0.3);
 }
 
+.contact-link.email:hover i {
+    color: white;
+    transform: scale(1.1);
+}
+
 .contact-link.linkedin:hover {
-    background: #0077b5; /* Blu LinkedIn */
+    background: #0077b5;
     color: white;
     border-color: #0077b5;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 119, 181, 0.3);
 }
 
+.contact-link.linkedin:hover i {
+    color: white;
+    transform: scale(1.1);
+}
+
 .contact-link.github:hover {
-    background: #000000; /* Nero GitHub */
+    background: #000000;
     color: white;
     border-color: #000000;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.contact-link i {
-    font-size: 1.2rem;
-    transition: transform 0.3s ease;
+.contact-link.github:hover i {
+    color: white;
+    transform: scale(1.1);
 }
 
 .separator {
