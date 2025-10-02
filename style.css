@@ -157,6 +157,31 @@ body {
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(26, 77, 46, 0.2);
 }
+/* Per l'Opzione 1 */
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--primary-green);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-green);
+}
+
+.btn-secondary:hover {
+    background: var(--primary-green);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 77, 46, 0.2);
+}
 
 .hero-image {
     text-align: center;
