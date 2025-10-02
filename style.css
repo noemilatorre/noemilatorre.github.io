@@ -542,6 +542,15 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
+/* Per l'Opzione 3 */
+.contact-link.cv:hover {
+    background: #d32f2f; /* Rosso per PDF */
+    color: white;
+    border-color: #d32f2f;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+}
+
 .contact-link i {
     font-size: 1.2rem;
     transition: transform 0.3s ease;
